@@ -10,6 +10,11 @@ Test Project - Manabie
 - Redis (Optional).
 - or Docker.
 
+** Minimal Docker Version: **
+* Engine: 18.03+
+* Compose: 1.21+
+
+
 ### Step by step install:
 ```bash
 $ git clone https://github.com/tuankien/manabie-test.git && cd manabie-test
