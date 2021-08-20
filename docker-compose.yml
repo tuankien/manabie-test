@@ -3,7 +3,7 @@ version: '3'
 services:
   nginx:
     image: nginx:latest
-    container_name: nginx-container
+    container_name: todo-nginx-container
     ports:
       - "8081:80"
     volumes:
@@ -14,7 +14,7 @@ services:
 
   php-fpm:
     build: ./docker/php7
-    container_name: php-container
+    container_name: todo-php-container
     links:
       - mysql
       - redis
