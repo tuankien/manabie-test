@@ -24,6 +24,11 @@ When above steps are successful, we can access:
 
 "http://localhost:8081/docs/index.html"  => List API are used in project
 
+Unitest:
+```bash
+$ docker-compose exec php-fpm sh -c "composer test"
+```
+
 Import  "/extras/post-data/Manabie_Test.postman_collection.json"  in to your postman tool
 
 OK => Now, we use all api in this project to test
