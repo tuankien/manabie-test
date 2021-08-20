@@ -2,7 +2,7 @@
 
 MAKEPATH := $(abspath $(lastword $(MAKEFILE_LIST)))
 PWD := $(dir $(MAKEPATH))
-CONTAINERS := $(shell docker ps -a -q -f "name=todo-*")
+CONTAINERS := $(shell docker ps -a -q -f "name=todo*")
 
 up:
 	docker-compose up -d --build
