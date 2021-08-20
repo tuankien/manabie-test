@@ -10,6 +10,27 @@ Test Project - Manabie
 - Redis (Optional).
 - or Docker.
 
+### Step by step install:
+```bash
+$ git clone https://github.com/tuankien/manabie-test.git && cd manabie-test
+$ cp .env.example .env
+$ make up
+$ make db
+$ docker-compose exec php-fpm sh -c "composer install"
+```
+When above steps are successful, we can access:
+
+http://localhost:8888/index.php  => phpmyadmin tool is used to handle db mysql 
+
+http://localhost:8081/docs/index.html  => List API are used in project
+
+Import /extras/post-data/Manabie_Test.postman_collection.json  in to your postman tool
+
+OK => we use all api to test
+
+### Other ways: ###
+
+
 ### With Composer:
 
 You can create a new project running the following commands:
