@@ -15,7 +15,7 @@ Test Project - Manabie
 You can create a new project running the following commands:
 
 ```bash
-$ composer create-project kiennt/manabie-test [your-project-name]
+$ composer create-project tuankien/manabie-test [your-project-name]
 $ cd [your-project-name]
 $ composer restart-db
 $ composer test

@@ -11,19 +11,19 @@ down:
 	docker-compose down
 
 nginx:
-	docker exec -it rest-api-slim-php-nginx-container bash
+	docker exec -it nginx-container bash
 
 php: 
-	docker exec -it rest-api-slim-php-php-container bash
+	docker exec -it php-container bash
 
 phplog: 
-	docker logs rest-api-slim-php-php-container
+	docker logs php-container
 
 nginxlog:
-	docker logs rest-api-slim-php-nginx-container
+	docker logs nginx-container
 
 db:
-	docker-compose exec mysql mysql -e 'DROP DATABASE IF EXISTS todo_test ; CREATE DATABASE todo;'
+	docker-compose exec mysql mysql -e 'DROP DATABASE IF EXISTS todo_test ; CREATE DATABASE todo_test;'
 	docker-compose exec mysql sh -c "mysql todo_test < docker-entrypoint-initdb.d/database.sql"
 
 coverage:
