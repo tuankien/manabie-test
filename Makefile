@@ -11,16 +11,16 @@ down:
 	docker-compose down
 
 nginx:
-	docker exec -it nginx-container bash
+	docker exec -it todo-nginx-container bash
 
 php: 
-	docker exec -it php-container bash
+	docker exec -it todo-php-container bash
 
 phplog: 
-	docker logs php-container
+	docker logs todo-php-container
 
 nginxlog:
-	docker logs nginx-container
+	docker logs todo-nginx-container
 
 db:
 	docker-compose exec mysql mysql -e 'DROP DATABASE IF EXISTS todo_test ; CREATE DATABASE todo_test;'
