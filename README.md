@@ -10,7 +10,7 @@ Test Project - Manabie
 - Redis (Optional).
 - or Docker.
 
-** Minimal Docker Version: **
+**Minimal Docker Version:**
 * Engine: 18.03+
 * Compose: 1.21+
 
